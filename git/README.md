@@ -1,0 +1,19 @@
+1.git基本配置
+git config --global user.name "Tongzhu Liu"
+git config --global user.email liutongzhu@smartdevices.com.cn
+git config --global core.editor vim
+git config --global color.status auto  
+git config --global color.branch auto  
+git config --global color.interactive auto  
+git config --global color.diff auto
+ 
+2.配置自定义diff工具
+安装meld：sudo apt-get install meld
+下载diffall脚本：https://github.com/liutz/tools/git/git-diffall
+设置快捷方式：sudo ln -s /home/zeus/sdk/bin/git-diffall /bin/git-diffall
+git配置比较差异工具：git config --global diff.tool meld
+git配置diffall工具：git config --global alias.diffall git-diffall
+可以试一试git diffall 或git diffall --cached
+
+3.查看git提交记录gitk
+sudo apt-get install gitk

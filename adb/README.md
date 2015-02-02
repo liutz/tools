@@ -1,4 +1,4 @@
-# 如何开启小米电视开发模式（ADB调试）
+# 如何开启小米电视开发模式（ADB无线调试）
 **1.编写如下代码，用来打开android系统设置**
 ```java
 Intent intentSet = new Intent(Settings.ACTION_SETTINGS);

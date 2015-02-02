@@ -17,5 +17,5 @@ startActivity(intentSet);
 # adb -s [TV IP]:5555 logcat
 # adb -s [TV IP]:5555 logcat -s [xxtag]
 ```
-注：在小米电视直接按照SettingLaucher.apk并运行
+注：在小米电视直接安装SettingLaucher.apk并运行
 

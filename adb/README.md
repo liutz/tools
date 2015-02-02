@@ -9,7 +9,7 @@ startActivity(intentSet);
 
 **3.打开系统设置，连续点击系统版本号7次就可以开启开发模式**
 
-**4.开发机与tv在同一局域网内，adb connect [TV IP]:5555，过滤logcat tag**
+**4.连接TV，请确保开发机与tv在同一局域网内，执行:adb connect [TV IP]:5555**
 
 **5.查看adb设备，打开adb logcat**
 ```sh

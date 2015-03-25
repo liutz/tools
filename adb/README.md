@@ -1,3 +1,11 @@
+# Ubuntu配置识别不同厂商设备
+**将51-android.rules文件下载到本地，执行命令**
+```sh
+# cp 51-android.rules /etc/udev/rules.d/
+# chmod a+r /etc/udev/rules.d/51-android.rules
+# service udev restart
+```
+
 # 如何开启小米电视开发模式（ADB无线调试）
 **1.编写如下代码，用来打开android系统设置**
 ```java

@@ -29,12 +29,13 @@
  `git show 356f6def9d3fb7f3b9032ff5aa4b9110d4cca87e`
 
 **5.生成SSH密钥**
+
  `$ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
-># Creates a new ssh key, using the provided email as a label
+ `# Creates a new ssh key, using the provided email as a label `
 
  `$ sudo apt-get install xclip `
-># Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+ `# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`) `
 
  `$ xclip -sel clip < ~/.ssh/id_rsa.pub `
-># Copies the contents of the id_rsa.pub file to your clipboard
+ `# Copies the contents of the id_rsa.pub file to your clipboard `
 

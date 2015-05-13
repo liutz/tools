@@ -19,7 +19,8 @@
 *注：可以试一试git diffall 或git diffall --cached 命令*
 
 **3.查看git提交记录gitk**
- `sudo apt-get install gitk`
+ 
+`sudo apt-get install gitk`
 
 **4.查看某个文件历史**
 - 查看某一个文件所有改动历史
@@ -30,12 +31,14 @@
 
 **5.生成SSH密钥**
 
+ `# Creates a new ssh key, using the provided email as a label `  
  `$ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
- `# Creates a new ssh key, using the provided email as a label `
 
+ `# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`) `  
  `$ sudo apt-get install xclip `
- `# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`) `
-
+ 
+ `# Copies the contents of the id_rsa.pub file to your clipboard `  
  `$ xclip -sel clip < ~/.ssh/id_rsa.pub `
- `# Copies the contents of the id_rsa.pub file to your clipboard `
+
+
 

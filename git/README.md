@@ -42,7 +42,9 @@
 
 **6.git修改commit历信**
 - 执行如命令，然后将左边pick修改为e保存退出
+
 `git rebase -i HEAD~3`
+
 `git rebase -i 1b07d0994e0a910ca6f473ee29d3211dc9dabefc`
 
 - 你可以修改提交，执行命令
@@ -52,6 +54,7 @@
 `git rebase --continue` 
 
 **7.更新gerrit自动生成Change-Id**
+
 `git reset --mixed origin/master`
 
 `git add .`

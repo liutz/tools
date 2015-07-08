@@ -40,7 +40,7 @@
  >Copies the contents of the id_rsa.pub file to your clipboard   
  `$ xclip -sel clip < ~/.ssh/id_rsa.pub `
 
-**6.git修改commit历信**
+**6.git修改commit历史**
 - 执行如命令，然后将左边pick修改为e保存退出
 
   `git rebase -i HEAD~3`

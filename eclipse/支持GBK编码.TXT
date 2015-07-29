@@ -1,0 +1,17 @@
+Eclipse GBK支持添加  
+1,首先Windows->Preferences, 然后选择General下面的Workspace->Text file encoding选择Other GBK->如果没有GBK的选项， 没关系直接输入GBK三个字母->Apply
+ 
+2,如果是Linux下那就
+把windows下的工程导入到了Linux下eclipse中，由于以前的工程代码，都是GBK编码的，而Ubuntu默认是不支持GBK编码的。
+所以，首先我们要先让Ubuntu支持GBK，方法如下：
+修改/var/lib/locales/supported.d/local文件,在文件中添加 
+zh_CN.GBK GBK
+zh_CN.GB2312 GB2312
+
+3,执行如下命令
+$ sudo dpkg-reconfigure --force locales
+然后在输出的结果中会出现 
+zh_CN.GB2312 done 
+zh_CN.GBK done
+
+这样Ubuntu就支持GBK编码了， 下面设置eclipse见上面方法1

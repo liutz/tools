@@ -1,0 +1,21 @@
+问题：有时候我们开发自动运行APK，签名是debug签名，不能使用正式签名，调试很不方便。
+
+修改eclipse Debug签名
+一、按照android默认证书规范，更改正式签名文件的密码，别名和别名密码
+二、设置修改过后的签名文件，Window->Preferences->Android
+    ->Build->"Custom debug keystore" 
+方式：
+1. 首先将正式证书复制一份叫my.keystore
+
+2. 修改keystore密码的命令(keytool为JDK带的命令行工具)：
+# keytool -storepasswd -keystore my.keystore
+其中，my.keystore是复制出来的证书文件，执行后会提示输入证书的当前密码，和新密码以及重复新密码确认。这一步需要将密码改为android
+
+3. 修改keystore的alias：
+# keytool -changealias -keystore my.keystore -alias my_name -destalias androiddebugkey
+这一步中，my_name是证书中当前的alias，-destalias指定的是要修改为的alias，这里按规矩来，改为androiddebugkey
+这个命令会先后提示输入keystore的密码和当前alias的密码,alias忘记了怎么办？用eclipse导入apk时，输入密码之后会显示alias名字
+
+4. 修改alias的密码：
+keytool -keypasswd -keystore my.keystore -alias androiddebugkey
+这一步执行后会提示输入keystore密码，alias密码，然后提示输入新的alias密码，同样，按规矩来，改为android

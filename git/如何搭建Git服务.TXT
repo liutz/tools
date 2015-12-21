@@ -26,7 +26,12 @@ username：被远程登录的用户名
 hostip：被远程登录的 ip 地址
 
 1.5 查看hostip可以通过ifconfig命令
-# sudo ssh -l zeus 192.168.1.102
+
+# sudo ssh -l zeus 10.3.11.62 -p 9090
+
+1.6 修改默认22端口号
+$ sudo gedit /etc/ssh/sshd_config
+$ /etc/init.d/ssh restart
 
 
 二、在服务器上部署 Git
@@ -117,3 +122,26 @@ Git config for mutiply ssh keys
 http://84kids.com/git-config-for-mutiply-ssh-keys/
 
 参考来源：http://wlog.cn/soft/git-ssh-server-for-debian.html
+
+
+三、内部Git服务配置参考
+3.1 在~/.ssh/config加入如下内容
+
+# 配置连接到内部git服务器
+Host gitserver
+HostName 10.3.11.62
+User zeus
+Port 9090
+IdentityFile ~/.ssh/id_rsa
+
+3.2 复制id_rsa.pub内容
+
+$ sudo apt-get install xclip
+$ xclip -sel clip < ~/.ssh/id_rsa.pub
+
+粘贴到wechat或邮件发送给我
+
+3.2 源码地址：git clone ssh://zeus@gitserver:/home/git/commons.git
+
+3.4 推送到git服务器上
+$ git push origin master

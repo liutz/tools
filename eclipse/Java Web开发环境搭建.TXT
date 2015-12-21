@@ -1,0 +1,10 @@
+开发工具组合：maven+eclipse(luna)+jetty插件+spring插件+nosql
+
+maven添加远程Archetypes地址
+http://repo.maven.apache.org/maven2/archetype-catalog.xml
+
+eclipse集成jetty插件
+http://eclipse-jetty.github.io
+
+eclipse集成spring插件
+https://spring.io/tools/eclipse#collapse

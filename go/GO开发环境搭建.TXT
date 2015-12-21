@@ -1,0 +1,2 @@
+Eclipse plugin url:
+goclipse - https://goclipse.googlecode.com/svn/trunk/goclipse-update-site/

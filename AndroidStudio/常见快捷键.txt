@@ -1,0 +1,4 @@
+Ctrl+Shift+U	大小写转换
+Ctrl+G		快速定位到哪一行
+ALT+ F7		查看该方法被哪些类引用
+Ctrl+N		快速定位一个类

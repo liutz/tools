@@ -141,7 +141,10 @@ $ xclip -sel clip < ~/.ssh/id_rsa.pub
 
 粘贴到wechat或邮件发送给我
 
-3.2 源码地址：git clone ssh://zeus@gitserver:/home/git/commons.git
+3.2 源码地址：
+git clone ssh://zeus@gitserver:/home/git/commons.git
+git clone ssh://zeus@gitserver:/home/git/docs.git
+git clone ssh://zeus@gitserver:/home/git/watermark.git
 
 3.4 推送到git服务器上
 $ git push origin master

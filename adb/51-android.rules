@@ -285,6 +285,8 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="043d", MODE="0660", GROUP="plugdev"
 
 #LG Electronics USA, Inc. 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="043e", MODE="0660", GROUP="plugdev"
+#LG G4
+SUBSYSTEM=="usb", ATTRS{idVendor}=="1004", MODE="0666", GROUP="plugdev"
 
 #RadiSys Corp. 
 SUBSYSTEM=="usb", ATTRS{idVendor}=="043f", MODE="0660", GROUP="plugdev"

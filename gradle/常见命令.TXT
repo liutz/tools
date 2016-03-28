@@ -1,0 +1,4 @@
+./gradlew assembleRelease
+
+发布到jcenter上，配置文件参考build.gradle
+gradle bintrayUpload

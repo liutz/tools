@@ -129,7 +129,7 @@ http://84kids.com/git-config-for-mutiply-ssh-keys/
 
 # 配置连接到内部git服务器
 Host gitserver
-HostName 10.3.11.62
+HostName 10.5.10.116
 User zeus
 Port 9090
 IdentityFile ~/.ssh/id_rsa

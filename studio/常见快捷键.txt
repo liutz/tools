@@ -4,3 +4,7 @@ Ctrl+Shift+U	大小写转换
 Ctrl+G		快速定位到哪一行
 ALT+ F7		查看该方法被哪些类引用
 Ctrl+N		快速定位一个类
+Ctrl+X		删除一行
+Ctrl+SHIFT+↓	向下一行
+Ctrl+O		快速重写父类方法
+

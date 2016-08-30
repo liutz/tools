@@ -64,3 +64,6 @@
 `git commit -m "This is a new commit for what I originally planned to be amended"`
 
 `git push origin master`
+
+**8.设置本地分支与远程分支关联**
+`git branch --set-upstream-to=origin/amazfit_rocky amazfit_rocky`

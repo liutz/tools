@@ -145,6 +145,7 @@ $ xclip -sel clip < ~/.ssh/id_rsa.pub
 git clone ssh://zeus@gitserver:/home/git/commons.git
 git clone ssh://zeus@gitserver:/home/git/docs.git
 git clone ssh://zeus@gitserver:/home/git/watermark.git
+git clone ssh://zeus@gitserver:/home/git/mydroid.git
 
 3.4 推送到git服务器上
 $ git push origin master

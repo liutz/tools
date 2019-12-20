@@ -27,3 +27,16 @@ startActivity(intentSet);
 ```
 注：在小米电视直接安装SettingLaucher.apk并运行
 
+# ADB调试常用小技巧
+**1.文本框输入**
+```
+adb shell input text “hello,world"
+```
+
+**2.debug版本导出应用数据（非root系统）**
+```
+adb shell
+run-as 包名
+dd if=mifit.db of=/mnt/sdcard/mifit.db
+```
+

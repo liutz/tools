@@ -1,3 +1,38 @@
+# Mac系统adb无法识别不出华为部分手机
+**1.查询连接的usb设备信息**
+```
+# system_profiler SPUSBDataType
+FLA-AL20:
+
+          Product ID: 0x107e
+          Vendor ID: 0x12d1  (Huawei Technologies Co., Ltd.)
+          Version: 2.99
+          Serial Number: YAUNW18518000534
+          Speed: Up to 480 Mb/sec
+          Manufacturer: HUAWEI
+          Location ID: 0x14100000 / 26
+          Current Available (mA): 500
+          Current Required (mA): 500
+          Extra Operating Current (mA): 0
+```
+**2.将0x12d1写入到adb-usb.init文件中**
+```
+echo "0x12d1" > ~/.android/adb_usb.ini
+```
+
+**3.重启adb服务**
+```
+$ adb kill-server
+$ adb start-server
+```
+
+**4.打开工程模式,电话按键拨打**
+```
+*#*#2846579#*#*
+```
+**5.找到->"ProjectMenu"->“后台设置”->“USB端口设置” 改成 "GOOGLE模式"。**
+
+
 # Ubuntu配置识别不同厂商设备
 **将51-android.rules文件下载到本地，执行命令**
 ```sh
